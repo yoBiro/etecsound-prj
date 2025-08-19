@@ -1,0 +1,28 @@
+.container-lyrics {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f4f4f4;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 24px;
+}
+
+.info-lyrics {
+    display: flex;
+    justify-content: center;
+}
+
+.title-lyrics {
+    font-size: 20px;
+}
+
+.all-lyrics {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.all-lyrics p:nth-child(2) {
+    padding-left: 20px;
+}

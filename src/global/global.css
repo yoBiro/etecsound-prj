@@ -8,13 +8,82 @@
 }
 
 body {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    background: radial-gradient(ellipse at top left, #0D482F 0%, #08844F 100%);
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #222;
     min-height: 100vh;
-    position: relative;
-    background-attachment: fixed;
-    background: linear-gradient(114deg, #414141 35.71%, #233961 90.61%);
-    backdrop-filter: blur(25px);
-    font-family: 'Poppins', 'Spotify Mix', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(100%);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    background: rgba(0,0,0,0.08);
+    backdrop-filter: blur(50px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f1f1f1;
+}
+
+.logo-blue {
+    color: #08844F;
+}
+
+.nav-content {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content li a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 6px 18px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.nav-content li a:hover {
+    background: #08844F;
+    color: #fff;
+}
+
+.footer-container {
+    background-color: #222;
+    color: #f4f4f4;
+    border-top: #4dbd8c solid 1px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
